@@ -544,6 +544,10 @@
           method steps are:
         </p>
         <ol class="algorithm">
+          <li>If the [=relevant global object=] of [=this=] does not have
+          [=transient activation=] [=throw=] a {{"NotAllowedError"}}
+          {{DOMException}}.
+          </li>
           <li>[=Request position=], passing |successCallback|, |errorCallback|,
           |options|, and (repeats) false.
           </li>
@@ -562,6 +566,10 @@
           method steps are:
         </p>
         <ol class="algorithm">
+          <li>If the [=relevant global object=] of [=this=] does not have
+          [=transient activation=] [=throw=] a {{"NotAllowedError"}}
+          {{DOMException}}.
+          </li>
           <li>Let |watchId:long| be [=request position=], passing
           |successCallback|, |errorCallback|, |options|, and (repeats) true.
           </li>
