@@ -159,7 +159,7 @@ ul.index code{color:inherit}
 .mdn .samsunginternet_android::before{background-image:url(https://www.w3.org/assets/logos/browser-logos/samsung-internet/samsung-internet.svg)}
 .mdn .webview_android::before{background-image:url(https://www.w3.org/assets/logos/browser-logos/android-webview/android-webview.png)}
 </style>
-<meta name="revision" content="123d51f0b786f4a00607de8388f150eeefcde5e6">
+<meta name="revision" content="a30d71330b9e9d9633649d1ab0e136611b89514d">
 <meta name="description" content="The Geolocation API provides access to geographical location
         information associated with the hosting device.">
 <style>
@@ -237,7 +237,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "xref": "web-platform",
   "errata": "https://w3c.github.io/geolocation-api/errata.html",
   "latestVersion": "https://www.w3.org/TR/geolocation/",
-  "gitRevision": "123d51f0b786f4a00607de8388f150eeefcde5e6",
+  "gitRevision": "a30d71330b9e9d9633649d1ab0e136611b89514d",
   "publishISODate": "2024-06-11T00:00:00.000Z",
   "generatedSubtitle": "W3C Editor's Draft 11 June 2024"
 }</script>
@@ -1907,7 +1907,7 @@ interface <dfn data-export="" data-dfn-type="interface" id="dom-geolocationposit
       
       <pre class="idl def" id="webidl-412902343"><span class="idlHeader"><a class="self-link" href="#webidl-412902343">WebIDL</a></span><code><span data-idl="" class="idlInterface" id="idl-def-geolocationcoordinates" data-title="GeolocationCoordinates">[<span class="extAttr"><a data-type="extended-attribute" href="https://webidl.spec.whatwg.org/#Exposed" id="ref-for-index-term-exposed-extended-attribute-3">Exposed</a>=Window</span>, <span class="extAttr"><a data-type="extended-attribute" href="https://webidl.spec.whatwg.org/#SecureContext" id="ref-for-index-term-securecontext-extended-attribute-2">SecureContext</a></span>]
 interface <a class="internalDFN idlID" data-link-type="interface" href="#dom-geolocationcoordinates" id="ref-for-dom-geolocationcoordinates-2"><code>GeolocationCoordinates</code></a> {<span data-idl="" class="idlAttribute" id="idl-def-geolocationcoordinates-accuracy" data-title="accuracy" data-dfn-for="GeolocationCoordinates">
-  readonly attribute<span class="idlType"> <a data-link-type="idl" data-type="interface" href="https://webidl.spec.whatwg.org/#idl-double" id="ref-for-index-term-double-type-1">double</a></span> <dfn data-export="" data-dfn-type="attribute" id="dom-geolocationcoordinates-accuracy" data-idl="attribute" data-title="accuracy" data-dfn-for="GeolocationCoordinates" data-type="double" data-lt="accuracy" data-local-lt="GeolocationCoordinates.accuracy" class="idlName" tabindex="0" aria-haspopup="dialog"><code>accuracy</code></dfn>;</span><span data-idl="" class="idlAttribute" id="idl-def-geolocationcoordinates-latitude" data-title="latitude" data-dfn-for="GeolocationCoordinates">
+  readonly attribute<span class="idlType"> <a data-link-type="idl" data-type="interface" href="https://webidl.spec.whatwg.org/#idl-double" id="ref-for-index-term-double-type-1">double</a></span> <a class="internalDFN idlName" data-link-type="attribute" href="#dom-geolocationcoordinates-accuracy" id="ref-for-dom-geolocationcoordinates-accuracy-1"><code>accuracy</code></a>;</span><span data-idl="" class="idlAttribute" id="idl-def-geolocationcoordinates-latitude" data-title="latitude" data-dfn-for="GeolocationCoordinates">
   readonly attribute<span class="idlType"> <a data-link-type="idl" data-type="interface" href="https://webidl.spec.whatwg.org/#idl-double" id="ref-for-index-term-double-type-2">double</a></span> <a class="internalDFN idlName" data-link-type="attribute" href="#dom-geolocationcoordinates-latitude" id="ref-for-dom-geolocationcoordinates-latitude-1"><code>latitude</code></a>;</span><span data-idl="" class="idlAttribute" id="idl-def-geolocationcoordinates-longitude" data-title="longitude" data-dfn-for="GeolocationCoordinates">
   readonly attribute<span class="idlType"> <a data-link-type="idl" data-type="interface" href="https://webidl.spec.whatwg.org/#idl-double" id="ref-for-index-term-double-type-3">double</a></span> <a class="internalDFN idlName" data-link-type="attribute" href="#dom-geolocationcoordinates-longitude" id="ref-for-dom-geolocationcoordinates-longitude-1"><code>longitude</code></a>;</span><span data-idl="" class="idlAttribute" id="idl-def-geolocationcoordinates-altitude" data-title="altitude" data-dfn-for="GeolocationCoordinates">
   readonly attribute<span class="idlType"> <a data-link-type="idl" data-type="interface" href="https://webidl.spec.whatwg.org/#idl-double" id="ref-for-index-term-double-type-4">double</a>?</span> <a class="internalDFN idlName" data-link-type="attribute" href="#dom-geolocationcoordinates-altitude" id="ref-for-dom-geolocationcoordinates-altitude-1"><code>altitude</code></a>;</span><span data-idl="" class="idlAttribute" id="idl-def-geolocationcoordinates-altitudeaccuracy" data-title="altitudeAccuracy" data-dfn-for="GeolocationCoordinates">
@@ -2056,13 +2056,19 @@ interface <a class="internalDFN idlID" data-link-type="interface" href="#dom-geo
           according to the [<cite><a class="bibref" data-link-type="biblio" href="#bib-wgs84" title="World Geodetic System 1984 (WGS 84)">WGS84</a></cite>] geodetic system, instead of just stating
           "decimal degrees."
         </aside>
+        <aside class="addition" id="a3">
+          <span class="marker">Candidate Correction:</span> To improve clarity
+          and precision, a description of the accuracy attribute has been added,
+          defining it as meters of radius.
+        </aside>
         <p>
           <del cite="#c3">The <strong>latitude</strong> and
           <strong>longitude</strong> attributes are geographic coordinates
           specified in decimal degrees.</del> <ins cite="#c3">The
           <dfn data-export="" data-dfn-type="attribute" id="dom-geolocationcoordinates-latitude" data-idl="attribute" data-title="latitude" data-dfn-for="GeolocationCoordinates" data-type="double" data-lt="latitude" data-local-lt="GeolocationCoordinates.latitude" tabindex="0" aria-haspopup="dialog"><code>latitude</code></dfn> and <dfn data-export="" data-dfn-type="attribute" id="dom-geolocationcoordinates-longitude" data-idl="attribute" data-title="longitude" data-dfn-for="GeolocationCoordinates" data-type="double" data-lt="longitude" data-local-lt="GeolocationCoordinates.longitude" tabindex="0" aria-haspopup="dialog"><code>longitude</code></dfn> attributes denote the
           position, specified as a real number of degrees, in the [<cite><a class="bibref" data-link-type="biblio" href="#bib-wgs84" title="World Geodetic System 1984 (WGS 84)">WGS84</a></cite>]
-          coordinate system.</ins>
+          coordinate system.</ins> <ins cite="#a3">The <dfn data-export="" data-dfn-type="attribute" id="dom-geolocationcoordinates-accuracy" data-idl="attribute" data-title="accuracy" data-dfn-for="GeolocationCoordinates" data-type="double" data-lt="accuracy" data-local-lt="GeolocationCoordinates.accuracy" tabindex="0" aria-haspopup="dialog"><code>accuracy</code></dfn>
+          attribute denotes the position accuracy radius in meters.</ins>
         </p>
       </section>
       <aside class="mdn"><details>
@@ -2349,7 +2355,7 @@ interface <a class="internalDFN idlID" data-link-type="interface" href="#dom-geo
                 initialize the <a data-link-type="idl" href="#dom-geolocationcoordinates-heading" class="internalDFN" id="ref-for-dom-geolocationcoordinates-heading-4"><code>heading</code></a> to
                 <code>NaN</code>.</ins>
               </li>
-              <li>Initialize <var>coord</var>'s <a data-link-type="idl" href="#dom-geolocationcoordinates-accuracy" class="internalDFN" id="ref-for-dom-geolocationcoordinates-accuracy-1"><code>accuracy</code></a>
+              <li>Initialize <var>coord</var>'s <a data-link-type="idl" href="#dom-geolocationcoordinates-accuracy" class="internalDFN" id="ref-for-dom-geolocationcoordinates-accuracy-2"><code>accuracy</code></a>
               attribute to a non-negative real number. The value <em class="rfc2119">SHOULD</em>
               correspond to a 95% confidence level with respect to the
               longitude and latitude values.
@@ -2683,7 +2689,7 @@ interface <dfn data-export="" data-dfn-type="interface" data-idl="interface" dat
 
 <span data-idl="" class="idlInterface" data-title="GeolocationCoordinates">[<span class="extAttr"><a data-type="extended-attribute" href="https://webidl.spec.whatwg.org/#Exposed" id="ref-for-index-term-exposed-extended-attribute-7">Exposed</a>=Window</span>, <span class="extAttr"><a data-type="extended-attribute" href="https://webidl.spec.whatwg.org/#SecureContext" id="ref-for-index-term-securecontext-extended-attribute-4">SecureContext</a></span>]
 interface <a class="internalDFN idlID" data-link-type="interface" href="#dom-geolocationcoordinates" id="ref-for-dom-geolocationcoordinates-8"><code>GeolocationCoordinates</code></a> {<span data-idl="" class="idlAttribute" data-title="accuracy" data-dfn-for="GeolocationCoordinates">
-  readonly attribute<span class="idlType"> <a data-link-type="idl" data-type="interface" href="https://webidl.spec.whatwg.org/#idl-double" id="ref-for-index-term-double-type-8">double</a></span> <dfn data-export="" data-dfn-type="attribute" data-idl="attribute" data-title="accuracy" data-dfn-for="GeolocationCoordinates" data-type="double" data-lt="accuracy" data-local-lt="GeolocationCoordinates.accuracy" class="idlName"><code>accuracy</code></dfn>;</span><span data-idl="" class="idlAttribute" data-title="latitude" data-dfn-for="GeolocationCoordinates">
+  readonly attribute<span class="idlType"> <a data-link-type="idl" data-type="interface" href="https://webidl.spec.whatwg.org/#idl-double" id="ref-for-index-term-double-type-8">double</a></span> <a class="internalDFN idlName" data-link-type="attribute" href="#dom-geolocationcoordinates-accuracy" id="ref-for-dom-geolocationcoordinates-accuracy-3"><code>accuracy</code></a>;</span><span data-idl="" class="idlAttribute" data-title="latitude" data-dfn-for="GeolocationCoordinates">
   readonly attribute<span class="idlType"> <a data-link-type="idl" data-type="interface" href="https://webidl.spec.whatwg.org/#idl-double" id="ref-for-index-term-double-type-9">double</a></span> <a class="internalDFN idlName" data-link-type="attribute" href="#dom-geolocationcoordinates-latitude" id="ref-for-dom-geolocationcoordinates-latitude-3"><code>latitude</code></a>;</span><span data-idl="" class="idlAttribute" data-title="longitude" data-dfn-for="GeolocationCoordinates">
   readonly attribute<span class="idlType"> <a data-link-type="idl" data-type="interface" href="https://webidl.spec.whatwg.org/#idl-double" id="ref-for-index-term-double-type-10">double</a></span> <a class="internalDFN idlName" data-link-type="attribute" href="#dom-geolocationcoordinates-longitude" id="ref-for-dom-geolocationcoordinates-longitude-3"><code>longitude</code></a>;</span><span data-idl="" class="idlAttribute" data-title="altitude" data-dfn-for="GeolocationCoordinates">
   readonly attribute<span class="idlType"> <a data-link-type="idl" data-type="interface" href="https://webidl.spec.whatwg.org/#idl-double" id="ref-for-index-term-double-type-11">double</a>?</span> <a class="internalDFN idlName" data-link-type="attribute" href="#dom-geolocationcoordinates-altitude" id="ref-for-dom-geolocationcoordinates-altitude-3"><code>altitude</code></a>;</span><span data-idl="" class="idlAttribute" data-title="altitudeAccuracy" data-dfn-for="GeolocationCoordinates">
@@ -2708,7 +2714,7 @@ interface <a class="internalDFN idlID" data-link-type="interface" href="#dom-geo
       <a class="index-term" href="#dfn-a-new-geolocationposition">A new GeolocationPosition</a> 
     <span class="print-only">§9.6</span></li><li>
       <a class="index-term" href="#dom-geolocationcoordinates-accuracy"><code>accuracy</code></a> attribute for <code>GeolocationCoordinates</code>
-    <span class="print-only">§9.</span></li><li>
+    <span class="print-only">§9.1</span></li><li>
       <a class="index-term" href="#dfn-acquire-a-position">acquire a position</a> 
     <span class="print-only">§6.6</span></li><li>
       <a class="index-term" href="#dom-geolocationcoordinates-altitude"><code>altitude</code></a> attribute for <code>GeolocationCoordinates</code>
@@ -3483,18 +3489,6 @@ interface <a class="internalDFN idlID" data-link-type="interface" href="#dom-geo
       <a href="#ref-for-dom-geolocationcoordinates-7" title="§ A. IDL Index">§ A. IDL Index</a> <a href="#ref-for-dom-geolocationcoordinates-8" title="Reference 2">(2)</a> 
     </li>
   </ul>
-    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dom-geolocationcoordinates-accuracy" aria-label="Links in this document to definition: accuracy">
-      <span class="caret"></span>
-      <div>
-        <a class="self-link" href="#dom-geolocationcoordinates-accuracy" aria-label="Permalink for definition: accuracy. Activate to close this dialog.">Permalink</a>
-        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> 
-      </div>
-      <p><b>Referenced in:</b></p>
-      <ul>
-    <li>
-      <a href="#ref-for-dom-geolocationcoordinates-accuracy-1" title="§ 9.6 Constructing a GeolocationPosition">§ 9.6 Constructing a GeolocationPosition</a> 
-    </li>
-  </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dom-geolocationcoordinates-latitude" aria-label="Links in this document to definition: latitude">
       <span class="caret"></span>
       <div>
@@ -3525,6 +3519,22 @@ interface <a class="internalDFN idlID" data-link-type="interface" href="#dom-geo
       <a href="#ref-for-dom-geolocationcoordinates-longitude-2" title="§ 9.6 Constructing a GeolocationPosition">§ 9.6 Constructing a GeolocationPosition</a> 
     </li><li>
       <a href="#ref-for-dom-geolocationcoordinates-longitude-3" title="§ A. IDL Index">§ A. IDL Index</a> 
+    </li>
+  </ul>
+    </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dom-geolocationcoordinates-accuracy" aria-label="Links in this document to definition: accuracy">
+      <span class="caret"></span>
+      <div>
+        <a class="self-link" href="#dom-geolocationcoordinates-accuracy" aria-label="Permalink for definition: accuracy. Activate to close this dialog.">Permalink</a>
+        <span class="marker dfn-exported" title="Definition can be referenced by other specifications">exported</span> <a class="marker idl-block" title="Jump to IDL declaration" href="#webidl-412902343">IDL</a>
+      </div>
+      <p><b>Referenced in:</b></p>
+      <ul>
+    <li>
+      <a href="#ref-for-dom-geolocationcoordinates-accuracy-1" title="§ 9. GeolocationCoordinates interface">§ 9. GeolocationCoordinates interface</a> 
+    </li><li>
+      <a href="#ref-for-dom-geolocationcoordinates-accuracy-2" title="§ 9.6 Constructing a GeolocationPosition">§ 9.6 Constructing a GeolocationPosition</a> 
+    </li><li>
+      <a href="#ref-for-dom-geolocationcoordinates-accuracy-3" title="§ A. IDL Index">§ A. IDL Index</a> 
     </li>
   </ul>
     </div><div class="dfn-panel" hidden="" role="dialog" aria-modal="true" id="dfn-panel-for-dom-geolocationcoordinates-altitude" aria-label="Links in this document to definition: altitude">
