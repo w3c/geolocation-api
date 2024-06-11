@@ -159,7 +159,7 @@ ul.index code{color:inherit}
 .mdn .samsunginternet_android::before{background-image:url(https://www.w3.org/assets/logos/browser-logos/samsung-internet/samsung-internet.svg)}
 .mdn .webview_android::before{background-image:url(https://www.w3.org/assets/logos/browser-logos/android-webview/android-webview.png)}
 </style>
-<meta name="revision" content="12327c4b5a40d7242768c3eaab90f9449d0f5ce5">
+<meta name="revision" content="123d51f0b786f4a00607de8388f150eeefcde5e6">
 <meta name="description" content="The Geolocation API provides access to geographical location
         information associated with the hosting device.">
 <style>
@@ -237,9 +237,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "xref": "web-platform",
   "errata": "https://w3c.github.io/geolocation-api/errata.html",
   "latestVersion": "https://www.w3.org/TR/geolocation/",
-  "gitRevision": "12327c4b5a40d7242768c3eaab90f9449d0f5ce5",
-  "publishISODate": "2024-06-10T00:00:00.000Z",
-  "generatedSubtitle": "W3C Editor's Draft 10 June 2024"
+  "gitRevision": "123d51f0b786f4a00607de8388f150eeefcde5e6",
+  "publishISODate": "2024-06-11T00:00:00.000Z",
+  "generatedSubtitle": "W3C Editor's Draft 11 June 2024"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-ED">
 <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://www.w3.org/StyleSheets/TR/2021/dark.css"></head>
@@ -247,7 +247,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
     <h1 id="title" class="title">Geolocation API</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2024-06-10">10 June 2024</time></p>
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2024-06-11">11 June 2024</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
@@ -323,7 +323,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         2022, the following substantive additions and/or corrections have been
         proposed:
       </p><rs-changelog from="REC-2022" filter="updateableRecFilter"><ul>
-      <li><a href="https://github.com/w3c/geolocation-api/commit/74b1dd0">Correction: Clarify units and reference geodetic system for latitude …</a></li><li><a href="https://github.com/w3c/geolocation-api/commit/09b48e6">Addition: expose .toJSON() on GeolocationCoordinates + GeolocationPos…</a></li><li><a href="https://github.com/w3c/geolocation-api/commit/c2fdd74">Correction: check for non-secure contexts</a> (<a href="https://github.com/w3c/geolocation-api/pull/157">#157</a>)</li>
+      <li><a href="https://github.com/w3c/geolocation-api/commit/74b1dd0">Correction: Clarify units and reference geodetic system for latitude …</a></li><li><a href="https://github.com/w3c/geolocation-api/commit/09b48e6">Addition: expose .toJSON() on GeolocationCoordinates + GeolocationPos…</a></li><li><a href="https://github.com/w3c/geolocation-api/commit/c2fdd74">Correction: check for non-secure contexts</a> (<a href="https://github.com/w3c/geolocation-api/pull/157">#157</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/a30d713">Addition: Define units for accuracy</a> (<a href="https://github.com/w3c/geolocation-api/pull/162">#162</a>)</li>
       </ul></rs-changelog>
       <p>
         A more detailed list of changes can be found in section
@@ -574,7 +574,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
     <a class="self-link" href="#example-using-clearwatch">Example<bdi> 3</bdi></a><span class="example-title">: Using clearWatch()</span>
   </div>
           <pre aria-busy="false"><code class="hljs js"><span class="hljs-keyword">const</span> watchId = navigator.geolocation.watchPosition(
-  <span class="hljs-function"><span class="hljs-params">position</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(position)
+  <span class="hljs-function"><span class="hljs-params">position</span> =&gt;</span> <span class="hljs-built_in">console</span>.log(position);
 );
 
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">buttonClickHandler</span>(<span class="hljs-params"></span>) </span>{
@@ -656,9 +656,9 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
 }</code></pre>
         </aside>
       </section>
-      <section id="using-timeout"><div class="header-wrapper"><h3 id="x2-6-using-timeout"><bdi class="secno">2.6 </bdi>
+      <section class="informative" id="using-timeout"><div class="header-wrapper"><h3 id="x2-6-using-timeout"><bdi class="secno">2.6 </bdi>
           Using <code>timeout</code>
-        </h3><a class="self-link" href="#using-timeout" aria-label="Permalink for Section 2.6"></a></div>
+        </h3><a class="self-link" href="#using-timeout" aria-label="Permalink for Section 2.6"></a></div><p><em>This section is non-normative.</em></p>
         
         <p>
           If you require location information in a time sensitive manner, you
@@ -1133,7 +1133,7 @@ callback <dfn data-export="" data-dfn-type="callback" id="dom-positionerrorcallb
               error handling within geolocation retrieval.
             </aside><del cite="#c1">If the <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object" id="ref-for-index-term-current-settings-object-1">current settings object</a>'s
             <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global" id="ref-for-index-term-relevant-global-object-1">relevant global object</a>'s <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window" id="ref-for-index-term-associated-document-1">associated <code>Document</code></a> is not
-            <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active" id="ref-for-index-term-fully-active-for-document-1">fully active</a>:</del> <ins cite="#c1">If the <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://webidl.spec.whatwg.org/#this" id="ref-for-index-term-this-2">this</a>'s
+            <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active" id="ref-for-index-term-fully-active-for-document-1">fully active</a>:</del> <ins cite="#c1">If <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://webidl.spec.whatwg.org/#this" id="ref-for-index-term-this-2">this</a>'s
             <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global" id="ref-for-index-term-relevant-global-object-2">relevant global object</a>'s <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window" id="ref-for-index-term-associated-document-2">associated <code>Document</code></a> is not
             <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active" id="ref-for-index-term-fully-active-for-document-2">fully active</a>:</ins>
             <ol>
@@ -1209,7 +1209,7 @@ callback <dfn data-export="" data-dfn-type="callback" id="dom-positionerrorcallb
               document's activity status.
             </aside><del cite="#c2">If the <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#current-settings-object" id="ref-for-index-term-current-settings-object-2">current settings object</a>'s
             <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global" id="ref-for-index-term-relevant-global-object-3">relevant global object</a>'s <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window" id="ref-for-index-term-associated-document-3">associated <code>Document</code></a> is not
-            <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active" id="ref-for-index-term-fully-active-for-document-3">fully active</a>:</del> <ins cite="#c2">If the <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://webidl.spec.whatwg.org/#this" id="ref-for-index-term-this-4">this</a>'s
+            <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active" id="ref-for-index-term-fully-active-for-document-3">fully active</a>:</del> <ins cite="#c2">If <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://webidl.spec.whatwg.org/#this" id="ref-for-index-term-this-4">this</a>'s
             <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://html.spec.whatwg.org/multipage/webappapis.html#concept-relevant-global" id="ref-for-index-term-relevant-global-object-4">relevant global object</a>'s <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://html.spec.whatwg.org/multipage/nav-history-apis.html#concept-document-window" id="ref-for-index-term-associated-document-4">associated <code>Document</code></a> is not
             <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://html.spec.whatwg.org/multipage/document-sequences.html#fully-active" id="ref-for-index-term-fully-active-for-document-4">fully active</a>:</ins>
             <ol>
@@ -2963,7 +2963,7 @@ interface <a class="internalDFN idlID" data-link-type="interface" href="#dom-geo
         API</cite> has received the following normative changes:
       </p>
        <rs-changelog from="FPWD" filter="removeCommits"><ul>
-      <li><a href="https://github.com/w3c/geolocation-api/commit/7082b4e">Fix references to "default allowlist"</a> (<a href="https://github.com/w3c/geolocation-api/pull/133">#133</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/514f15b">fix "Queue a task" / "in parallel" usage</a> (<a href="https://github.com/w3c/geolocation-api/pull/118">#118</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/a1531cb">Suggest permission lifetime</a> (<a href="https://github.com/w3c/geolocation-api/pull/108">#108</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/0c378d9">Handle OS-level permission change</a> (<a href="https://github.com/w3c/geolocation-api/pull/109">#109</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/2a116d7">Switch DOMTimeStamp to EpochTimeStamp</a> (<a href="https://github.com/w3c/geolocation-api/pull/104">#104</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/2c0c516">Return 0 when watchPosition() errors</a> (<a href="https://github.com/w3c/geolocation-api/pull/100">#100</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/de05002">Callback with error if doc is not fully active</a> (<a href="https://github.com/w3c/geolocation-api/pull/97">#97</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/f4605e5">Gracefully handle documents that are not fully active</a> (<a href="https://github.com/w3c/geolocation-api/pull/90">#90</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/41d7945">Add "geolocation task queue"</a> (<a href="https://github.com/w3c/geolocation-api/pull/87">#87</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/f8b930f">Added webapps as group</a> (<a href="https://github.com/w3c/geolocation-api/pull/144">#144</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/74b1dd0">Correction: Clarify units and reference geodetic system for latitude …</a></li><li><a href="https://github.com/w3c/geolocation-api/commit/09b48e6">Addition: expose .toJSON() on GeolocationCoordinates + GeolocationPos…</a></li><li><a href="https://github.com/w3c/geolocation-api/commit/c2fdd74">Correction: check for non-secure contexts</a> (<a href="https://github.com/w3c/geolocation-api/pull/157">#157</a>)</li>
+      <li><a href="https://github.com/w3c/geolocation-api/commit/7082b4e">Fix references to "default allowlist"</a> (<a href="https://github.com/w3c/geolocation-api/pull/133">#133</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/514f15b">fix "Queue a task" / "in parallel" usage</a> (<a href="https://github.com/w3c/geolocation-api/pull/118">#118</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/a1531cb">Suggest permission lifetime</a> (<a href="https://github.com/w3c/geolocation-api/pull/108">#108</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/0c378d9">Handle OS-level permission change</a> (<a href="https://github.com/w3c/geolocation-api/pull/109">#109</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/2a116d7">Switch DOMTimeStamp to EpochTimeStamp</a> (<a href="https://github.com/w3c/geolocation-api/pull/104">#104</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/2c0c516">Return 0 when watchPosition() errors</a> (<a href="https://github.com/w3c/geolocation-api/pull/100">#100</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/de05002">Callback with error if doc is not fully active</a> (<a href="https://github.com/w3c/geolocation-api/pull/97">#97</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/f4605e5">Gracefully handle documents that are not fully active</a> (<a href="https://github.com/w3c/geolocation-api/pull/90">#90</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/41d7945">Add "geolocation task queue"</a> (<a href="https://github.com/w3c/geolocation-api/pull/87">#87</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/f8b930f">Added webapps as group</a> (<a href="https://github.com/w3c/geolocation-api/pull/144">#144</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/74b1dd0">Correction: Clarify units and reference geodetic system for latitude …</a></li><li><a href="https://github.com/w3c/geolocation-api/commit/09b48e6">Addition: expose .toJSON() on GeolocationCoordinates + GeolocationPos…</a></li><li><a href="https://github.com/w3c/geolocation-api/commit/c2fdd74">Correction: check for non-secure contexts</a> (<a href="https://github.com/w3c/geolocation-api/pull/157">#157</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/a30d713">Addition: Define units for accuracy</a> (<a href="https://github.com/w3c/geolocation-api/pull/162">#162</a>)</li>
       </ul></rs-changelog>
       <p>
         Since publication of the Second Edition in 2016, this specification
