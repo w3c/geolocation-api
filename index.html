@@ -74,7 +74,7 @@ dfn{cursor:pointer}
     
 <meta name="color-scheme" content="light dark">
     
-<title>Geolocation API</title>
+<title>Geolocation</title>
     
     
   
@@ -159,9 +159,9 @@ ul.index code{color:inherit}
 .mdn .samsunginternet_android::before{background-image:url(https://www.w3.org/assets/logos/browser-logos/samsung-internet/samsung-internet.svg)}
 .mdn .webview_android::before{background-image:url(https://www.w3.org/assets/logos/browser-logos/android-webview/android-webview.png)}
 </style>
-<meta name="revision" content="22ed7a45c15e5cc5c7fc52aa220d057dea2a75e6">
-<meta name="description" content="The Geolocation API provides access to geographical location
-        information associated with the hosting device.">
+<meta name="revision" content="a251654b8ce90559fa7caacf3afb31445d9413d5">
+<meta name="description" content="Geolocation provides access to geographical location information
+        associated with the hosting device.">
 <style>
 .hljs{--base:#fafafa;--mono-1:#383a42;--mono-2:#686b77;--mono-3:#717277;--hue-1:#0b76c5;--hue-2:#336ae3;--hue-3:#a626a4;--hue-4:#42803c;--hue-5:#ca4706;--hue-5-2:#c91243;--hue-6:#986801;--hue-6-2:#9a6a01}
 @media (prefers-color-scheme:dark){
@@ -230,42 +230,42 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   "previousPublishDate": "2022-02-17",
   "crEnd": "2022-03-18",
   "previousMaturity": "CR",
-  "github": "w3c/geolocation-api",
+  "github": "w3c/geolocation",
   "caniuse": "geolocation",
-  "testSuiteURI": "https://wpt.live/geolocation-API/",
-  "implementationReportURI": "https://w3c.github.io/geolocation-api/reports/PR_imp_report.html",
+  "testSuiteURI": "https://wpt.live/geolocation/",
+  "implementationReportURI": "https://w3c.github.io/geolocation/reports/PR_imp_report.html",
   "xref": "web-platform",
-  "errata": "https://w3c.github.io/geolocation-api/errata.html",
+  "errata": "https://w3c.github.io/geolocation/errata.html",
   "latestVersion": "https://www.w3.org/TR/geolocation/",
-  "gitRevision": "22ed7a45c15e5cc5c7fc52aa220d057dea2a75e6",
-  "publishISODate": "2024-06-14T00:00:00.000Z",
-  "generatedSubtitle": "W3C Editor's Draft 14 June 2024"
+  "gitRevision": "a251654b8ce90559fa7caacf3afb31445d9413d5",
+  "publishISODate": "2024-06-15T00:00:00.000Z",
+  "generatedSubtitle": "W3C Editor's Draft 15 June 2024"
 }</script>
 <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-ED">
 <link rel="stylesheet" media="(prefers-color-scheme: dark)" href="https://www.w3.org/StyleSheets/TR/2021/dark.css"></head>
   <body data-cite="WEBIDL secure-contexts permissions-policy permissions hr-time html HTML INFRA URL WEBIDL DOM FETCH" class="h-entry"><div class="head">
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72">
   </a></p>
-    <h1 id="title" class="title">Geolocation API</h1> 
-    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2024-06-14">14 June 2024</time></p>
+    <h1 id="title" class="title">Geolocation</h1> 
+    <p id="w3c-state"><a href="https://www.w3.org/standards/types#ED">W3C Editor's Draft</a> <time class="dt-published" datetime="2024-06-15">15 June 2024</time></p>
     <details open="">
       <summary>More details about this document</summary>
       <dl>
         <dt>This version:</dt><dd>
-                <a class="u-url" href="https://w3c.github.io/geolocation-api/">https://w3c.github.io/geolocation-api/</a>
+                <a class="u-url" href="https://w3c.github.io/geolocation/">https://w3c.github.io/geolocation/</a>
               </dd>
         <dt>Latest published version:</dt><dd>
                 <a href="https://www.w3.org/TR/geolocation/">https://www.w3.org/TR/geolocation/</a>
               </dd>
-        <dt>Latest editor's draft:</dt><dd><a href="https://w3c.github.io/geolocation-api/">https://w3c.github.io/geolocation-api/</a></dd>
+        <dt>Latest editor's draft:</dt><dd><a href="https://w3c.github.io/geolocation/">https://w3c.github.io/geolocation/</a></dd>
         <dt>History:</dt><dd>
                     <a href="https://www.w3.org/standards/history/geolocation/">https://www.w3.org/standards/history/geolocation/</a>
                   </dd><dd>
-                    <a href="https://github.com/w3c/geolocation-api/commits/">Commit history</a>
+                    <a href="https://github.com/w3c/geolocation/commits/">Commit history</a>
                   </dd>
-        <dt>Test suite:</dt><dd><a href="https://wpt.live/geolocation-API/">https://wpt.live/geolocation-API/</a></dd>
+        <dt>Test suite:</dt><dd><a href="https://wpt.live/geolocation/">https://wpt.live/geolocation/</a></dd>
         <dt>Implementation report:</dt><dd>
-                <a href="https://w3c.github.io/geolocation-api/reports/PR_imp_report.html">https://w3c.github.io/geolocation-api/reports/PR_imp_report.html</a>
+                <a href="https://w3c.github.io/geolocation/reports/PR_imp_report.html">https://w3c.github.io/geolocation/reports/PR_imp_report.html</a>
               </dd>
         
         
@@ -282,12 +282,12 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </dd>
         
         <dt>Feedback:</dt><dd>
-        <a href="https://github.com/w3c/geolocation-api/">GitHub w3c/geolocation-api</a>
-        (<a href="https://github.com/w3c/geolocation-api/pulls/">pull requests</a>,
-        <a href="https://github.com/w3c/geolocation-api/issues/new/choose">new issue</a>,
-        <a href="https://github.com/w3c/geolocation-api/issues/">open issues</a>)
+        <a href="https://github.com/w3c/geolocation/">GitHub w3c/geolocation</a>
+        (<a href="https://github.com/w3c/geolocation/pulls/">pull requests</a>,
+        <a href="https://github.com/w3c/geolocation/issues/new/choose">new issue</a>,
+        <a href="https://github.com/w3c/geolocation/issues/">open issues</a>)
       </dd>
-        <dt>Errata:</dt><dd><a href="https://w3c.github.io/geolocation-api/errata.html">Errata exists</a>.</dd>
+        <dt>Errata:</dt><dd><a href="https://w3c.github.io/geolocation/errata.html">Errata exists</a>.</dd>
         
       <dt class="caniuse-title">Browser support:</dt><dd class="caniuse-stats"><a href="https://caniuse.com/geolocation">caniuse.com</a></dd></dl>
     </details>
@@ -308,8 +308,8 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
   </div>
     <section id="abstract" class="introductory"><h2>Abstract</h2>
       <p>
-        The Geolocation API provides access to geographical location
-        information associated with the hosting device.
+        Geolocation provides access to geographical location information
+        associated with the hosting device.
       </p>
     </section>
     <section id="sotd" class="updateable-rec introductory"><h2>Status of This Document</h2><p><em>This section describes the status of this
@@ -323,7 +323,7 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
         2022, the following substantive additions and/or corrections have been
         proposed:
       </p><rs-changelog from="REC-2022" filter="updateableRecFilter"><ul>
-      <li><a href="https://github.com/w3c/geolocation-api/commit/74b1dd0">Correction: Clarify units and reference geodetic system for latitude …</a></li><li><a href="https://github.com/w3c/geolocation-api/commit/09b48e6">Addition: expose .toJSON() on GeolocationCoordinates + GeolocationPos…</a></li><li><a href="https://github.com/w3c/geolocation-api/commit/c2fdd74">Correction: check for non-secure contexts</a> (<a href="https://github.com/w3c/geolocation-api/pull/157">#157</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/a30d713">Addition: Define units for accuracy</a> (<a href="https://github.com/w3c/geolocation-api/pull/162">#162</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/22ed7a4">Correction: Update acquisition algorithm to define data types and han…</a></li>
+      <li><a href="https://github.com/w3c/geolocation/commit/a30d713">Addition: Define units for accuracy</a> (<a href="https://github.com/w3c/geolocation/pull/162">#162</a>)</li><li><a href="https://github.com/w3c/geolocation/commit/c2fdd74">Correction: check for non-secure contexts</a> (<a href="https://github.com/w3c/geolocation/pull/157">#157</a>)</li><li><a href="https://github.com/w3c/geolocation/commit/09b48e6">Addition: expose .toJSON() on GeolocationCoordinates + GeolocationPos…</a></li><li><a href="https://github.com/w3c/geolocation/commit/74b1dd0">Correction: Clarify units and reference geodetic system for latitude …</a></li><li><a href="https://github.com/w3c/geolocation/commit/22ed7a4">Correction: Update acquisition algorithm to define data types and han…</a></li>
       </ul></rs-changelog>
       <p>
         A more detailed list of changes can be found in section
@@ -467,18 +467,18 @@ var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
       </h2><a class="self-link" href="#introduction" aria-label="Permalink for Section 1."></a></div><p><em>This section is non-normative.</em></p>
       
       <p>
-        The <cite>Geolocation API</cite> defines a high-level interface to
-        location information associated only with the device hosting the
-        implementation. Common sources of location information include Global
-        Positioning System (GPS) and location inferred from network signals
-        such as IP address, RFID, WiFi and Bluetooth MAC addresses, and
-        GSM/CDMA cell IDs, as well as user input. The API itself is agnostic of
-        the underlying location information sources, and no guarantee is given
-        that the API returns the device's actual location.
+        <cite>Geolocation</cite> defines a high-level interface to location
+        information associated only with the device hosting the implementation.
+        Common sources of location information include Global Positioning
+        System (GPS) and location inferred from network signals such as IP
+        address, RFID, WiFi and Bluetooth MAC addresses, and GSM/CDMA cell IDs,
+        as well as user input. The API itself is agnostic of the underlying
+        location information sources, and no guarantee is given that the API
+        returns the device's actual location.
       </p>
       <p>
-        If an end user <a data-link-type="dfn|abstract-op" data-lt="check permission" href="#dfn-checking-permission" class="internalDFN" id="ref-for-dfn-checking-permission-1">grants permission</a>, the
-        <cite>Geolocation API</cite>:
+        If an end user <a data-link-type="dfn|abstract-op" data-lt="check permission" href="#dfn-checking-permission" class="internalDFN" id="ref-for-dfn-checking-permission-1">grants permission</a>,
+        <cite>Geolocation</cite>:
       </p>
       <ul>
         <li>Provides location data as latitude, longitude, altitude, speed, and
@@ -704,15 +704,15 @@ navigator.geolocation.getCurrentPosition(
         
         <p>
           The <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://www.w3.org/TR/permissions-policy-1/#policy-controlled-feature-default-allowlist" id="ref-for-index-term-default-allowlist-for-policy-controlled-feature-1">default allowlist</a> of <code>'self'</code>
-          allows Geolocation API usage in same-origin nested frames but
-          prevents third-party content from using the API.
+          allows API usage in same-origin nested frames but prevents
+          third-party content from using the API.
         </p>
         <p>
           Third-party usage can be selectively enabled by adding the
           <code><a data-link-type="element-attr" data-type="element-attr" href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#attr-iframe-allow" id="ref-for-index-term-allow-attribute-for-iframe-element-1">allow</a></code><code>="geolocation"</code> attribute to an <code><a data-link-type="element" data-type="element" href="https://html.spec.whatwg.org/multipage/iframe-embed-object.html#the-iframe-element" id="ref-for-index-term-iframe-element-1">iframe</a></code> element:
         </p>
-        <aside class="example" id="example-enabling-the-geolocation-api-in-an-iframe"><div class="marker">
-    <a class="self-link" href="#example-enabling-the-geolocation-api-in-an-iframe">Example<bdi> 7</bdi></a><span class="example-title">: Enabling the Geolocation API in an iframe</span>
+        <aside class="example" id="example-enabling-geolocation-in-an-iframe"><div class="marker">
+    <a class="self-link" href="#example-enabling-geolocation-in-an-iframe">Example<bdi> 7</bdi></a><span class="example-title">: Enabling Geolocation in an iframe</span>
   </div>
           <pre aria-busy="false"><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">iframe</span>
   <span class="hljs-attr">src</span>=<span class="hljs-string">"https://third-party.com"</span>
@@ -749,10 +749,10 @@ navigator.geolocation.getCurrentPosition(
         </h3><a class="self-link" href="#user-consent" aria-label="Permalink for Section 3.1"></a></div><p><em>This section is non-normative.</em></p>
         
         <p>
-          The <cite>Geolocation API</cite> is a <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://www.w3.org/TR/permissions/#dfn-powerful-feature" id="ref-for-index-term-powerful-feature-1">powerful feature</a> that
-          requires <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://www.w3.org/TR/permissions/#dfn-express-permission" id="ref-for-index-term-express-permission-1">express permission</a> from an end-user before any location
-          data is shared with a web application. This requirement is
-          normatively enforced by the <a data-link-type="dfn|abstract-op" href="#dfn-checking-permission" class="internalDFN" id="ref-for-dfn-checking-permission-2">check permission</a> steps on which the
+          <cite>Geolocation</cite> is a <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://www.w3.org/TR/permissions/#dfn-powerful-feature" id="ref-for-index-term-powerful-feature-1">powerful feature</a> that requires
+          <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://www.w3.org/TR/permissions/#dfn-express-permission" id="ref-for-index-term-express-permission-1">express permission</a> from an end-user before any location data is
+          shared with a web application. This requirement is normatively
+          enforced by the <a data-link-type="dfn|abstract-op" href="#dfn-checking-permission" class="internalDFN" id="ref-for-dfn-checking-permission-2">check permission</a> steps on which the
           <a data-link-type="idl" data-lt="getCurrentPosition()" href="#dom-geolocation-getcurrentposition" class="internalDFN" id="ref-for-dom-geolocation-getcurrentposition-3"><code>getCurrentPosition</code></a><code>()</code> and
           <a data-link-type="idl" data-lt="watchPosition()" href="#dom-geolocation-watchposition" class="internalDFN" id="ref-for-dom-geolocation-watchposition-3"><code>watchPosition</code></a><code>()</code> methods rely.
         </p>
@@ -782,7 +782,7 @@ navigator.geolocation.getCurrentPosition(
         
         <div class="note" role="note" id="issue-container-generatedID"><div role="heading" class="note-title marker" id="h-note" aria-level="4"><span>Note</span><span class="issue-label">: Developers' responsibility with this sensitive data</span></div><p class="">
           This section applies to "recipients", which generally means
-          developers utilizing the <cite>Geolocation API</cite>. Although it's
+          developers utilizing <cite>Geolocation</cite>. Although it's
           impossible for the user agent, or this specification, to enforce
           these requirements, developers need to read this section carefully
           and do their best to adhere to the suggestions below. Developers need
@@ -885,8 +885,8 @@ navigator.geolocation.getCurrentPosition(
         </h3><a class="self-link" href="#check-permission" aria-label="Permalink for Section 3.4"></a></div>
         
         <p>
-          The <cite>Geolocation API</cite> is a <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://www.w3.org/TR/permissions/#dfn-default-powerful-feature" id="ref-for-index-term-default-powerful-feature-1">default powerful feature</a>
-          identified by the <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://www.w3.org/TR/permissions/#dfn-name" id="ref-for-index-term-name-for-powerful-feature-1">name</a> <code><dfn class="permission" data-dfn-type="permission" id="dfn-geolocation" tabindex="0" aria-haspopup="dialog" data-export="">"geolocation"</dfn></code>.
+          <cite>Geolocation</cite> is a <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://www.w3.org/TR/permissions/#dfn-default-powerful-feature" id="ref-for-index-term-default-powerful-feature-1">default powerful feature</a> identified
+          by the <a data-link-type="dfn|abstract-op" data-type="dfn" href="https://www.w3.org/TR/permissions/#dfn-name" id="ref-for-index-term-name-for-powerful-feature-1">name</a> <code><dfn class="permission" data-dfn-type="permission" id="dfn-geolocation" tabindex="0" aria-haspopup="dialog" data-export="">"geolocation"</dfn></code>.
         </p>
         <p>
           When <dfn data-local-lt="check permission" data-lt="checking permission|check permission" id="dfn-checking-permission" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">checking permission</dfn>
@@ -906,8 +906,8 @@ navigator.geolocation.getCurrentPosition(
       </h2><a class="self-link" href="#security" aria-label="Permalink for Section 4."></a></div>
       
       <p>
-        There are no security considerations associated with Geolocation API at
-        the time of publication. However, readers are advised to read the
+        There are no security considerations associated with Geolocation at the
+        time of publication. However, readers are advised to read the
         <a href="#privacy" data-matched-text="[[[#privacy]]]" class="sec-ref"><bdi class="secno">3. </bdi>
         Privacy considerations</a>.
       </p>
@@ -2154,8 +2154,8 @@ interface <a class="internalDFN idlID" data-link-type="interface" href="#dom-geo
         </aside>
         <aside class="addition" id="a3">
           <span class="marker">Candidate Correction:</span> To improve clarity
-          and precision, a description of the accuracy attribute has been added,
-          defining it as meters of radius.
+          and precision, a description of the accuracy attribute has been
+          added, defining it as meters of radius.
         </aside>
         <p>
           <del cite="#c3">The <strong>latitude</strong> and
@@ -3065,11 +3065,11 @@ interface <a class="internalDFN idlID" data-link-type="interface" href="#dom-geo
       </h2><a class="self-link" href="#changelog" aria-label="Permalink for Section D."></a></div><p><em>This section is non-normative.</em></p>
       
       <p>
-        Since First Public Working Draft in 2021, the <cite>Geolocation
-        API</cite> has received the following normative changes:
+        Since First Public Working Draft in 2021, <cite>Geolocation</cite> has
+        received the following normative changes:
       </p>
        <rs-changelog from="FPWD" filter="removeCommits"><ul>
-      <li><a href="https://github.com/w3c/geolocation-api/commit/7082b4e">Fix references to "default allowlist"</a> (<a href="https://github.com/w3c/geolocation-api/pull/133">#133</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/514f15b">fix "Queue a task" / "in parallel" usage</a> (<a href="https://github.com/w3c/geolocation-api/pull/118">#118</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/a1531cb">Suggest permission lifetime</a> (<a href="https://github.com/w3c/geolocation-api/pull/108">#108</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/0c378d9">Handle OS-level permission change</a> (<a href="https://github.com/w3c/geolocation-api/pull/109">#109</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/2a116d7">Switch DOMTimeStamp to EpochTimeStamp</a> (<a href="https://github.com/w3c/geolocation-api/pull/104">#104</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/2c0c516">Return 0 when watchPosition() errors</a> (<a href="https://github.com/w3c/geolocation-api/pull/100">#100</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/de05002">Callback with error if doc is not fully active</a> (<a href="https://github.com/w3c/geolocation-api/pull/97">#97</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/f4605e5">Gracefully handle documents that are not fully active</a> (<a href="https://github.com/w3c/geolocation-api/pull/90">#90</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/41d7945">Add "geolocation task queue"</a> (<a href="https://github.com/w3c/geolocation-api/pull/87">#87</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/f8b930f">Added webapps as group</a> (<a href="https://github.com/w3c/geolocation-api/pull/144">#144</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/74b1dd0">Correction: Clarify units and reference geodetic system for latitude …</a></li><li><a href="https://github.com/w3c/geolocation-api/commit/09b48e6">Addition: expose .toJSON() on GeolocationCoordinates + GeolocationPos…</a></li><li><a href="https://github.com/w3c/geolocation-api/commit/c2fdd74">Correction: check for non-secure contexts</a> (<a href="https://github.com/w3c/geolocation-api/pull/157">#157</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/a30d713">Addition: Define units for accuracy</a> (<a href="https://github.com/w3c/geolocation-api/pull/162">#162</a>)</li><li><a href="https://github.com/w3c/geolocation-api/commit/22ed7a4">Correction: Update acquisition algorithm to define data types and han…</a></li>
+      <li><a href="https://github.com/w3c/geolocation/commit/a30d713">Addition: Define units for accuracy</a> (<a href="https://github.com/w3c/geolocation/pull/162">#162</a>)</li><li><a href="https://github.com/w3c/geolocation/commit/c2fdd74">Correction: check for non-secure contexts</a> (<a href="https://github.com/w3c/geolocation/pull/157">#157</a>)</li><li><a href="https://github.com/w3c/geolocation/commit/09b48e6">Addition: expose .toJSON() on GeolocationCoordinates + GeolocationPos…</a></li><li><a href="https://github.com/w3c/geolocation/commit/74b1dd0">Correction: Clarify units and reference geodetic system for latitude …</a></li><li><a href="https://github.com/w3c/geolocation/commit/f8b930f">Added webapps as group</a> (<a href="https://github.com/w3c/geolocation/pull/144">#144</a>)</li><li><a href="https://github.com/w3c/geolocation/commit/7082b4e">Fix references to "default allowlist"</a> (<a href="https://github.com/w3c/geolocation/pull/133">#133</a>)</li><li><a href="https://github.com/w3c/geolocation/commit/514f15b">fix "Queue a task" / "in parallel" usage</a> (<a href="https://github.com/w3c/geolocation/pull/118">#118</a>)</li><li><a href="https://github.com/w3c/geolocation/commit/a1531cb">Suggest permission lifetime</a> (<a href="https://github.com/w3c/geolocation/pull/108">#108</a>)</li><li><a href="https://github.com/w3c/geolocation/commit/0c378d9">Handle OS-level permission change</a> (<a href="https://github.com/w3c/geolocation/pull/109">#109</a>)</li><li><a href="https://github.com/w3c/geolocation/commit/2a116d7">Switch DOMTimeStamp to EpochTimeStamp</a> (<a href="https://github.com/w3c/geolocation/pull/104">#104</a>)</li><li><a href="https://github.com/w3c/geolocation/commit/2c0c516">Return 0 when watchPosition() errors</a> (<a href="https://github.com/w3c/geolocation/pull/100">#100</a>)</li><li><a href="https://github.com/w3c/geolocation/commit/de05002">Callback with error if doc is not fully active</a> (<a href="https://github.com/w3c/geolocation/pull/97">#97</a>)</li><li><a href="https://github.com/w3c/geolocation/commit/f4605e5">Gracefully handle documents that are not fully active</a> (<a href="https://github.com/w3c/geolocation/pull/90">#90</a>)</li><li><a href="https://github.com/w3c/geolocation/commit/41d7945">Add "geolocation task queue"</a> (<a href="https://github.com/w3c/geolocation/pull/87">#87</a>)</li><li><a href="https://github.com/w3c/geolocation/commit/22ed7a4">Correction: Update acquisition algorithm to define data types and han…</a></li>
       </ul></rs-changelog>
       <p>
         Since publication of the Second Edition in 2016, this specification
@@ -3104,7 +3104,7 @@ interface <a class="internalDFN idlID" data-link-type="interface" href="#dom-geo
         </li>
       </ul>
       <p>
-        See the <a href="https://github.com/w3c/geolocation-api/commits/gh-pages">commit
+        See the <a href="https://github.com/w3c/geolocation/commits/gh-pages">commit
         history</a> for a complete list of changes.
       </p>
     </section>
